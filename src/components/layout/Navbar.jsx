@@ -9,8 +9,10 @@ import {
   NavItemStyled,
   NavLink,
   NavList,
+  SocialIcons,
 } from "../styles/layout/Navbar.styled";
 import { NavItems } from "../../data/NavItems";
+import { FaTwitter, FaGithub } from "react-icons/fa";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,6 +41,17 @@ const Navbar = () => {
                 onClick={() => setMenuOpen(false)}
               >
                 <NavLink href={navItem.href}>{navItem.text}</NavLink>
+
+                {navItem.hasSocialIcons ? (
+                  <SocialIcons>
+                    <NavLink href="#" target="_blank">
+                      <FaTwitter />
+                    </NavLink>
+                    <NavLink href="#" target="_blank">
+                      <FaGithub />
+                    </NavLink>
+                  </SocialIcons>
+                ) : null}
               </NavItemStyled>
             ))}
         </NavList>

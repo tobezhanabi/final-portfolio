@@ -4,16 +4,16 @@ export const NavItems = [
     text: "About",
   },
   {
-    href: "#about",
-    text: "About",
+    href: "#project",
+    text: "projects",
   },
   {
-    href: "#about",
-    text: "About",
+    href: "#services",
+    text: "services",
   },
   {
-    href: "#about",
-    text: "About",
+    href: "#contact",
+    text: "let's chat",
   },
   { hasSocialIcons: true },
   {

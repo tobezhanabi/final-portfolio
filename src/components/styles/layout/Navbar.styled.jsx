@@ -144,3 +144,18 @@ export const NavLink = styled.a`
     }
   }
 `;
+
+export const SocialIcons = styled.div`
+  display: none;
+  @media (max-width: ${({ theme }) => theme.mobile}) {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      margin: 0 0.8rem;
+      font-size: 2rem;
+    }
+  }
+`;
