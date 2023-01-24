@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles } from "./components/styles/Globals.styled";
+import Navbar from "./components/layout/Navbar";
 
-function App() {
+const App = () => {
+  const theme = {
+    colors: {
+      white: "#fff",
+      dimBlue: "#0554F2",
+      lightBlue: "#1374F2",
+      offWhite: "#F2F2F2",
+      green: "#0DD965",
+      dark: "#181818",
+      yellow: "#ffff73",
+    },
+    mobile: "768px",
+    transition: "all 650ms ease-in-out",
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Navbar />
+      </ThemeProvider>
+    </>
   );
-}
+};
 
 export default App;
