@@ -25,6 +25,7 @@ export const Nav = styled.nav`
   z-index: 98px;
   transition: all 1s ease-in-out;
   background: rgba(16, 20, 246, 0.12);
+  top: ${({ scrollDirection }) => (scrollDirection === "down" ? "-80px" : "0")};
 `;
 
 export const Logo = styled.img`
@@ -126,13 +127,18 @@ export const NavItemStyled = styled.li`
 
 export const NavLink = styled.a`
   text-transform: uppercase;
+  position: relative;
+  display: flex;
   color: ${({ theme }) => theme.colors.white};
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, transparent, #002);
 
   &::after {
     content: "";
-    display: block;
-    height: 3px;
+    display: flex;
+    height: 2px;
+    position: absolute;
     width: 0%;
     background: ${({ theme }) => theme.colors.yellow};
     transition: all ease-in-out 300ms;

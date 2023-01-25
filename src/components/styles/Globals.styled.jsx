@@ -17,6 +17,7 @@ html{
     background: ${({ theme }) => theme.colors.dark};
    
 }
+
 a{
     text-decoration: none;
     color: ${({ theme }) => theme.colors.white};

@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/styles/Globals.styled";
 import Navbar from "./components/layout/Navbar";
+import HeroSections from "./components/sections/HeroSections";
 
 const App = () => {
   const theme = {
@@ -21,6 +22,7 @@ const App = () => {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Navbar />
+        <HeroSections />
       </ThemeProvider>
     </>
   );
