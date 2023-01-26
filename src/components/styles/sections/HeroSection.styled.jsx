@@ -6,7 +6,7 @@ const typing = keyframes`
   color: ${({ theme }) => theme.colors.white}
 }
 100%{
-  width: 20ch;
+  width: 23ch;
 }
 
 `;
@@ -70,7 +70,7 @@ export const HeroContent = styled.div`
     font-weight: 400;
     overflow: hidden;
     white-space: nowrap;
-    width: 18ch;
+    width: 24ch;
     margin: auto;
     animation: ${typing} 5s steps(19), ${blink} 1s ease-in-out 8s infinite;
     border-right: 4px solid #fafafa;
@@ -114,7 +114,7 @@ export const HeroContent = styled.div`
     h1 {
       letter-spacing: 0.6rem;
       font-size: 1.5rem;
-      width: 20ch;
+      width: 23ch;
     }
     h3 {
       font-size: 2.2rem;
