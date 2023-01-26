@@ -22,9 +22,9 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  z-index: 98px;
+  z-index: 98;
   transition: all 1s ease-in-out;
-  background: rgba(16, 20, 246, 0.12);
+  background: rgba(1, 2, 2, 0.12);
   top: ${({ scrollDirection }) => (scrollDirection === "down" ? "-80px" : "0")};
 `;
 
@@ -129,6 +129,7 @@ export const NavLink = styled.a`
   text-transform: uppercase;
   position: relative;
   display: flex;
+
   color: ${({ theme }) => theme.colors.white};
   letter-spacing: 1px;
   -webkit-box-reflect: below 1px

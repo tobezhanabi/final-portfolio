@@ -18,7 +18,7 @@ export const CTAButton = styled.a`
     background: ${({ primary, theme }) =>
       primary ? theme.colors.yellow : "none"};
     color: ${({ primary, theme }) =>
-      primary ? theme.colors.white : theme.colors.green};
+      primary ? theme.colors.dark : theme.colors.green};
     border: 2px solid ${({ theme }) => theme.colors.green};
   }
 `;
