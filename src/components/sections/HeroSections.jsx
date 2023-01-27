@@ -8,11 +8,11 @@ import {
 import React from "react";
 import { CTAButton } from "../styles/common/CTAButton.styled";
 import { FaArrowDown, FaGithub, FaTwitter } from "react-icons/fa";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 
 const HeroSections = () => {
   return (
-    <StyledHeroSection>
+    <StyledHeroSection id="hero-section">
       <HeroContent>
         <h1>Hi I'm Tobezzi</h1>
         <span>

@@ -2,6 +2,9 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./components/styles/Globals.styled";
 import Navbar from "./components/layout/Navbar";
 import HeroSections from "./components/sections/HeroSections";
+import { Container } from "./components/styles/common/container.styled";
+import AboutSection from "./components/sections/AboutSection";
+import { ProjectSection } from "./components/sections/ProjectSection";
 
 const App = () => {
   const theme = {
@@ -23,6 +26,10 @@ const App = () => {
         <GlobalStyles />
         <Navbar />
         <HeroSections />
+        <Container>
+          <AboutSection />
+          <ProjectSection />
+        </Container>
       </ThemeProvider>
     </>
   );

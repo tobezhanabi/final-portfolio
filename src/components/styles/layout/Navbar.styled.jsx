@@ -17,7 +17,7 @@ const navItemAnimation = ({ index }) => css`
 export const Nav = styled.nav`
   height: 50px;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 20px 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,7 +31,7 @@ export const Nav = styled.nav`
 export const Logo = styled.img`
   width: 100%;
   height: 100%;
-  padding-top: 10px;
+  padding-top: 20px;
 `;
 
 export const MenuIcon = styled.div`
