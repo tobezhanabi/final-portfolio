@@ -5,6 +5,7 @@ export const StyledFooter = styled.footer`
   padding: 2.5rem;
   text-align: center;
   display: flex;
+  color: green;
   justify-content: space-evenly;
   flex-direction: column;
   font-size: 16px;

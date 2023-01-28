@@ -35,7 +35,6 @@ const App = () => {
           <ServicesSection />
           <ContactSection />
         </Container>
-
         <Footer />
       </ThemeProvider>
     </>
