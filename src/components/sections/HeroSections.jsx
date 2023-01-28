@@ -41,10 +41,10 @@ const HeroSections = () => {
         <FaArrowDown />
       </StyledArrowDown>
       <HeroSocialIcons>
-        <SocialIcon href="" target="_blank">
+        <SocialIcon href="https://github.com/tobezhanabi" target="_blank">
           <FaGithub />
         </SocialIcon>
-        <SocialIcon href="" target="_blank">
+        <SocialIcon href="https://twitter.com/HanabiPlug" target="_blank">
           <FaTwitter />
         </SocialIcon>
       </HeroSocialIcons>
