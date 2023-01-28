@@ -46,7 +46,11 @@ const AboutSection = () => {
             doloremque placeat molestiae. Beatae voluptatem sint cumque pariatur
             expedita quia odit culpa?
           </p>
-          <CTAButton primary href="#" target="_blank">
+          <CTAButton
+            primary
+            href="https://tobezzi.netlify.app/blog.html"
+            target="_blank"
+          >
             Visit Blog
           </CTAButton>
         </AboutContent>

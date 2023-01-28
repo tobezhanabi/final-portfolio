@@ -5,6 +5,9 @@ import HeroSections from "./components/sections/HeroSections";
 import { Container } from "./components/styles/common/container.styled";
 import AboutSection from "./components/sections/AboutSection";
 import { ProjectSection } from "./components/sections/ProjectSection";
+import { ServicesSection } from "./components/sections/ServicesSection";
+import { ContactSection } from "./components/sections/ContactSection";
+import { Footer } from "./components/layout/Footer";
 
 const App = () => {
   const theme = {
@@ -29,7 +32,11 @@ const App = () => {
         <Container>
           <AboutSection />
           <ProjectSection />
+          <ServicesSection />
+          <ContactSection />
         </Container>
+
+        <Footer />
       </ThemeProvider>
     </>
   );

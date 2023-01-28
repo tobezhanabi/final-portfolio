@@ -60,7 +60,10 @@ const Navbar = () => {
                 ) : null}
 
                 {navItem.hasCTA ? (
-                  <CTAButton href="" target="_blank">
+                  <CTAButton
+                    href="https://tobezzi.netlify.app/blog.html"
+                    target="_blank"
+                  >
                     Visit Blog
                     {/* pass a props here as primary */}
                   </CTAButton>

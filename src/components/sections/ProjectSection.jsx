@@ -12,7 +12,7 @@ import { Projects } from "../../data/Projects";
 export const ProjectSection = () => {
   return (
     <>
-      <StyledProjectsSection>
+      <StyledProjectsSection id="projects">
         <SectionHeading>
           <h1>Projects</h1>
           <p>These are some cool projects that I have made </p>
