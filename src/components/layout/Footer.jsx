@@ -1,3 +1,11 @@
+import { FooterNav, StyledFooter } from "../styles/layout/Footer.styled";
+
 export const Footer = () => {
-  return <></>;
+  return (
+    <>
+      <StyledFooter>
+        <FooterNav></FooterNav>
+      </StyledFooter>
+    </>
+  );
 };
