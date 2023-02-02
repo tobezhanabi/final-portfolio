@@ -31,7 +31,7 @@ const Form = () => {
           <label htmlFor="message">Message</label>
           <textarea className="form-control" id="message" required />
         </div>
-        <CTAButton>{formStatus}</CTAButton>
+        <CTAButton className="buttonSend">{formStatus}</CTAButton>
       </form>
     </FormBody>
   );

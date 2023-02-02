@@ -50,10 +50,22 @@ export const FormBody = styled.div`
   }
 
   @media (max-width: 550px) {
-    height: 350px;
-    width: 220px;
-  }
-  h2 {
-    font-size: 1.5rem;
+    height: 320px;
+    width: 250px;
+
+    h2 {
+      font-size: 1.5rem;
+      padding-bottom: 5px;
+    }
+    div input,
+    div textarea {
+      padding: 2px 2px 2.5px;
+      border-radius: 4px;
+      font-size: 0.81rem;
+    }
+    .buttonSend {
+      font-size: 12px;
+      align-items: flex-end;
+    }
   }
 `;
