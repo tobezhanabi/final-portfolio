@@ -16,7 +16,7 @@ export const FormBody = styled.div`
     padding-left: 30px;
   }
   div {
-    margin: 25px -10px;
+    margin: 15px -10px;
     width: 100%;
     position: relative;
   }
@@ -33,18 +33,29 @@ export const FormBody = styled.div`
     font-size: 1rem;
   }
   div label {
-    padding: 5px, 2px;
+    padding: 2px;
     color: #000;
+   padding: :0;
+    font-size: 14px;
     transition: 0.5s;
     pointer-events: none;
   }
 
-  div input[type="type"],
+  div input[type="text"],
   div input[type="email"] {
     border: 0;
     border-bottom: 1px solid #b4becb;
     width: 100%;
-    padding: 3px;
+    padding: 7px;
+    font-size: 14px;
+    opacity: 0.7;
+  }
+
+  div textarea{
+    border: 0;
+    border-bottom: 1px solid #b4becb;
+    width: 100%;
+    padding: 10px;
     font-size: 14px;
     opacity: 0.7;
   }
@@ -85,12 +96,13 @@ export const FormBody = styled.div`
     }
     div input,
     div textarea {
-      padding: 2px 2px 2.5px;
+      padding: 5px 5px 28px;
       border-radius: 4px;
       font-size: 0.81rem;
     }
     button {
       font-size: 12px;
+      padding: 5px 15px;
     }
   }
 `;

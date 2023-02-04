@@ -20,6 +20,13 @@ const Form = () => {
     email: "",
     comments: "",
   });
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -34,6 +41,13 @@ const Form = () => {
   function handleSubmit(event) {
     event.preventDefault();
     // submitToApi(formData)
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formData }),
+    })
+      .then(() => alert("Success!"))
+      .catch((error) => alert(error));
     console.log(formData);
   }
   return (
@@ -71,6 +85,7 @@ const Form = () => {
           <textarea
             className="form-control"
             id="message"
+            placeholder="What do you want create? A portfolio or you just want to say Hi! 🥰"
             value={formData.comments}
             onChange={handleChange}
             name="comments"
