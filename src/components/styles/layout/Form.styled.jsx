@@ -48,6 +48,32 @@ export const FormBody = styled.div`
     font-size: 14px;
     opacity: 0.7;
   }
+  button {
+    padding: 6px 60px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+
+    font-size: 14px;
+
+    background-color: #0066cc;
+    padding: 10px 30px;
+    border: 2px solid #0066cc;
+    box-shadow: rgb(0, 0, 0) 4px 0px 18px -4px;
+    border-radius: 25px 0px 28px;
+    transition: 1438ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  button:hover {
+    background-color: ${({ theme }) => theme.colors.green};
+    color: black;
+    transition: 1438ms;
+    padding: 10px 50px;
+    transform: translateY(-6px);
+  }
 
   @media (max-width: 550px) {
     height: 320px;
@@ -63,9 +89,8 @@ export const FormBody = styled.div`
       border-radius: 4px;
       font-size: 0.81rem;
     }
-    .buttonSend {
+    button {
       font-size: 12px;
-      align-items: flex-end;
     }
   }
 `;

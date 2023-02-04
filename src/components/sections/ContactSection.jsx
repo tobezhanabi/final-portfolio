@@ -27,7 +27,11 @@ export const ContactSection = () => {
 
             <div className="twiitercontact">
               <p>Also reach me on </p>
-              <a href="https://twitter.com/HanabiPlug">
+              <a
+                href="https://twitter.com/HanabiPlug"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FaTwitter />
                 <span> Twitter</span>
               </a>
