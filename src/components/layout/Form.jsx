@@ -40,7 +40,7 @@ const Form = () => {
     <FormBody>
       <h2> Contact Me!</h2>
 
-      <form onSubmit={handleSubmit} data-netfily="true">
+      <form onSubmit={handleSubmit} netfily>
         <div>
           <label htmlFor="name">Name</label>
           <input
